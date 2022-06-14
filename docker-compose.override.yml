@@ -1,0 +1,19 @@
+services:
+  homer:
+    container_name: homer
+    image: b4bz/homer
+    environment:
+      - PGID=${PGID}
+      - PUID=${PUID}
+      - TZ=${TZ}
+    hostname: ${DOCKERHOSTNAME}
+    logging:
+      driver: json-file
+      options:
+        max-file: ${DOCKERLOGGING_MAXFILE}
+        max-size: ${DOCKERLOGGING_MAXSIZE}
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - /home/monitor/storage/homer_assets:/www/assets
