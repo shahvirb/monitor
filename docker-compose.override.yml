@@ -6,6 +6,7 @@ services:
       - PGID=${PGID}
       - PUID=${PUID}
       - TZ=${TZ}
+      - INIT_ASSETS=0
     hostname: ${DOCKERHOSTNAME}
     logging:
       driver: json-file
@@ -16,4 +17,4 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - /home/monitor/storage/homer_assets:/www/assets
+      - /home/monitor/gitsource/monitor/homer_assets:/www/assets
