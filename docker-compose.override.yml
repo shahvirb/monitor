@@ -1,20 +1,4 @@
 services:
   homer:
-    container_name: homer
-    image: b4bz/homer
-    environment:
-      - PGID=${PGID}
-      - PUID=${PUID}
-      - TZ=${TZ}
-      - INIT_ASSETS=0
-    hostname: ${DOCKERHOSTNAME}
-    logging:
-      driver: json-file
-      options:
-        max-file: ${DOCKERLOGGING_MAXFILE}
-        max-size: ${DOCKERLOGGING_MAXSIZE}
-    restart: always
-    ports:
-      - 80:8080
     volumes:
       - /home/monitor/gitsource/monitor/homer_assets:/www/assets
