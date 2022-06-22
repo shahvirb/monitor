@@ -60,10 +60,6 @@ services:
   - name: "Media"
     icon: "fa-solid fa-clapperboard"
     items:
-      - name: "Jellyfin"
-        subtitle: "Serve and watch"
-        logo: "assets/icons/jellyfin.png"
-        url: "http://mediaserver:8096"
       - name: "Plex"
         subtitle: "Serve and watch"
         logo: "assets/icons/plex.png"
