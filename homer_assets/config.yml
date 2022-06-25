@@ -89,6 +89,9 @@ services:
   - name: "Other"
     #icon: "fa-solid fa-square"
     items:
+      - name: "Joplin Server"
+        # icon: 
+        url: "http://joplinserver:22300"
       - name: "Octopi"
         icon: "fa-solid fa-print"
         url: "http://octopi.local/"
