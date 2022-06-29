@@ -84,7 +84,7 @@ services:
     items:
       - name: "Joplin Server"
         logo: "assets/icons/joplin.png"
-        url: "http://joplinserver:22300"
+        url: "http://joplinserver.fdatxvault.win"
       - name: "Octopi"
         icon: "fa-solid fa-print"
         url: "http://octopi.local/"
